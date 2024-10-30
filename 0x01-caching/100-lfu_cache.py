@@ -36,5 +36,4 @@ class LFUCache(BaseCaching):
         if key in self.cache_data:
             self.queue.remove(key)
             self.queue.append(key)
-            self.cache_data[key] += 1
         return self.cache_data.get(key, None)
