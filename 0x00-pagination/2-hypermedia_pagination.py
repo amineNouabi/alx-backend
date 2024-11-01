@@ -42,7 +42,7 @@ class Server:
         return self.dataset()[left:right]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> object:
-        """"""
+        """Get Page with hyper data."""
         total_pages = ceil(len(self.dataset()) / page_size)
         return {
             "page_size": page_size,
