@@ -15,7 +15,7 @@ function setNewSchool(schoolName, value) {
 }
 
 async function displaySchoolValue(schoolName) {
-  const value = await client.getAsync(schoolName);
+  const value = await getAsync(schoolName);
   if (value)
     console.log(value);
 }
