@@ -18,3 +18,5 @@ client.hgetall("ALX", (err, hashSet) => {
   if (err) throw err;
   console.log(hashSet);
 });
+
+client.disconnect();
